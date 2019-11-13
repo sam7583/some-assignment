@@ -1,0 +1,2 @@
+# some-assignment
+about JavaScrtip
