@@ -1,2 +1,2 @@
 # some-assignment
-about JavaScrtipt
+about JavaScript
