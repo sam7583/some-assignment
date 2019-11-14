@@ -162,7 +162,17 @@ exports.arraysAnswers = {
 
   findAllOccurrences: function(arr, target) {
 
-  }
-};
+    var findOca = [];
 
+    for (var i = 0; i <= arr.length; i++) {
+    for (var i = 0; i <= arr.length; i++) {
+      if (arr[i] === target) {
+        findOca[findOca.length]=i
+      }
+    }
+
+    return findOca;
+  }
+}
+}
 
