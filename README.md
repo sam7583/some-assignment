@@ -1,2 +1,2 @@
 # some-assignment
-about JavaScript
+Array with higher order function
