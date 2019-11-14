@@ -43,19 +43,15 @@ exports.arraysAnswers = {
     if(arr.length==1){
       return newArr;
     }else{
- for (i=0;i <= arr.length-2 ;i++) {
+        for(i=0;i <= arr.length-2 ;i++) {
     
            newArr[i] = arr[i];
-           
-    
-   
-       }
-    
-       
+       } 
     }
   
     return newArr;
   },
+  
   prepend: function(arr, item) {
     // write without array inbuild.
     // var firstValue = arr[0];
@@ -75,73 +71,50 @@ exports.arraysAnswers = {
       for( i=1; i<arr.length; i++){
     newArray[i-1]=arr[i];
     
-      }
-     
+      } 
       return newArray
     }
   },
-      
-         
-       
-     
-    
-    
-    
-   
-    
-  
-
-  concat: function(arr1, arr2) {
-    var myArray = [];
-
+        
+ concat: function(arr1, arr2) {
+    var myArray = []
     myArray[0] = arr1[0];
-
     myArray[1] = arr1[1];
-
     myArray[2] = arr1[2];
-
     myArray[3] = arr1[3];
-
     myArray[4] = arr2[0];
-
     myArray[5] = arr2[1];
-
     myArray[6] = arr2[2];
-
     myArray[7] = arr2[3];
   
             return myArray;
-
 },
 
-
-
   insert: function(arr, item, index) {
-    
-    var newArra=[];
+      var newArra=[];
     for( i=0; i<index; i++){
-      newArra[i]=arr[i]
+        newArra[i]=arr[i]
     }
-    newArra[index]=item;
+        newArra[index]=item;
     for( i=index; i<arr.length; i++){
-      newArra[i+1]=arr[i]
+        newArra[i+1]=arr[i]
     }
-    return newArra;
-     
-   
-     
+        return newArra;  
   },
 
-  count: function(arr) {
-    
-         var ocaa=[];
-         for( i=0; i<=arr.length; i++){
+count: function(arr, item) {
+    var count = 0;
 
-         }
-         },
+    for ( i = 0; i<= arr.length;  i++) {
+      if (arr[i] === item) {
+        count++;
+      }
+    }
+         return count;
+  },
 
   duplicates: function(arr) {
-   
+   //this is empty i unable to do this
   },
 
   square: function(arr) {
@@ -151,8 +124,8 @@ exports.arraysAnswers = {
           squareResult[i]= arr[i]* arr[i];
    }
 
-      return squareResult;
-      
+           return squareResult;
+     //this is the alternative method using forEach method below
       //  arr.forEach(function(ele,index,array) {
       //    array[index]=ele*ele;
       //  });
@@ -161,9 +134,7 @@ exports.arraysAnswers = {
   },
 
   findAllOccurrences: function(arr, target) {
-
     var findOca = [];
-
     for (var i = 0; i <= arr.length; i++) {
     for (var i = 0; i <= arr.length; i++) {
       if (arr[i] === target) {
@@ -176,14 +147,9 @@ exports.arraysAnswers = {
 }
 }
 //This is about the flowcontrol.js
-exports = typeof window === 'undefined' ? global : window;
-exports = (typeof window === 'undefined') ? global : window;
-
-exports.flowControlAnswers = {
   fizzBuzz: function(num) {
 
-    // INSTRUCTIONS
-  
+    // INSTRUCTION
     // write a function that receives a number as its argument;
     // if the number is divisible by 3, the function should return 'fizz';
     // if the number is divisible by 5, the function should return 'buzz';
