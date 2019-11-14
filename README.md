@@ -1,2 +1,2 @@
-# some-assignment
-Array with higher order function,flowControl.js,logicalOperator
+# some-assignment given by nikhil
+Array with higher order functionality ,flowControl.js ,logicalOperator
