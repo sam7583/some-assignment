@@ -114,7 +114,7 @@ count: function(arr, item) {
   },
 
   duplicates: function(arr) {
-   //this is empty i unable to do this
+      //i can't find the solution
   },
 
   square: function(arr) {
